@@ -1,13 +1,9 @@
-<h1 align="center">🔥 Smart Gas Leakage Detection System (Industrial IoT)</h1>
+# 🔥 Smart Gas Leakage Detection System (Industrial IoT)
 
-<p align="center">
-  <img src="[https://img.shields.io/badge/Status-Completed-28A745?style=for-the-badge](https://img.shields.io/badge/Status-Completed-28A745?style=for-the-badge)" alt="Status" />
-  <img src="[https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)" alt="Version" />
-</p>
+![Status](https://img.shields.io/badge/Status-Completed-28A745?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
 
-<p align="center">
-  A robust, real-time safety monitoring solution using <b>NodeMCU-32S (ESP32)</b> and <b>FreeRTOS</b>. This system bridges physical environment sensing with instant cloud-based Telegram alerts and bidirectional remote control.
-</p>
+A robust, real-time safety monitoring solution using **NodeMCU-32S (ESP32)** and **FreeRTOS**. This system bridges physical environment sensing with instant cloud-based Telegram alerts and bidirectional remote control.
 
 ---
 
@@ -41,23 +37,17 @@ This project addresses the critical need for real-time hazardous gas detection (
 ## 🛠️ Tech Stack
 
 ### Firmware & Languages
-<p align="left">
-  <img src="[https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)" alt="C++" />
-  <img src="[https://img.shields.io/badge/Embedded_C-A8B9CC?style=for-the-badge&logo=c&logoColor=black](https://img.shields.io/badge/Embedded_C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)" alt="Embedded C" />
-</p>
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Embedded C](https://img.shields.io/badge/Embedded_C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 
 ### Hardware & OS
-<p align="left">
-  <img src="[https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)" alt="ESP32" />
-  <img src="[https://img.shields.io/badge/FreeRTOS-221E68?style=for-the-badge&logo=freertos&logoColor=white](https://img.shields.io/badge/FreeRTOS-221E68?style=for-the-badge&logo=freertos&logoColor=white)" alt="FreeRTOS" />
-  <img src="[https://img.shields.io/badge/PlatformIO-F6822B?style=for-the-badge&logo=PlatformIO&logoColor=white](https://img.shields.io/badge/PlatformIO-F6822B?style=for-the-badge&logo=PlatformIO&logoColor=white)" alt="PlatformIO" />
-</p>
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
+![FreeRTOS](https://img.shields.io/badge/FreeRTOS-221E68?style=for-the-badge&logo=freertos&logoColor=white)
+![PlatformIO](https://img.shields.io/badge/PlatformIO-F6822B?style=for-the-badge&logo=PlatformIO&logoColor=white)
 
 ### Communication & Cloud
-<p align="left">
-  <img src="[https://img.shields.io/badge/Telegram_API-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white](https://img.shields.io/badge/Telegram_API-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)" alt="Telegram API" />
-  <img src="[https://img.shields.io/badge/HTTPS-000000?style=for-the-badge&logo=https&logoColor=white](https://img.shields.io/badge/HTTPS-000000?style=for-the-badge&logo=https&logoColor=white)" alt="HTTPS" />
-</p>
+![Telegram API](https://img.shields.io/badge/Telegram_API-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
+![HTTPS](https://img.shields.io/badge/HTTPS-000000?style=for-the-badge&logo=https&logoColor=white)
 
 ---
 
@@ -80,21 +70,23 @@ To deploy this firmware to your own ESP32 board, follow these steps using Visual
 * A Telegram Bot Token (obtained from BotFather) and your Chat ID.
 
 ### 1. Clone the repository
-
-git clone [https://github.com/TYLERfromvn21/Smart-Gas-Leakage-Detection-System-IoT-Project-.git](https://github.com/TYLERfromvn21/Smart-Gas-Leakage-Detection-System-IoT-Project-.git)
+```bash
+git clone https://github.com/TYLERfromvn21/Smart-Gas-Leakage-Detection-System-IoT-Project-.git
 cd Smart-Gas-Leakage-Detection-System-IoT-Project-
-
+```
 ### 2. Configure Credentials
 Navigate to include/config.h and update the environment definitions with your actual credentials:
 
 // --- WI-FI CONFIGURATION ---
+```bash
 #define WIFI_SSID "YOUR_WIFI_SSID"
 #define WIFI_PASS "YOUR_WIFI_PASSWORD"
-
+```
 // --- TELEGRAM CONFIGURATION ---
+```bash
 #define BOT_TOKEN "YOUR_TELEGRAM_BOT_TOKEN"
 #define CHAT_ID "YOUR_PERSONAL_CHAT_ID"
-
+```
 ### 3. Build and Upload
 1. Connect the ESP32 board via a USB data cable.
 2. Click the Build (✓) icon in the PlatformIO toolbar to compile the C++ source code.
