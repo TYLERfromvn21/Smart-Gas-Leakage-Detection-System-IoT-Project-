@@ -1,4 +1,4 @@
-# 🔥 Smart Gas Leakage Detection System (Industrial IoT)
+# 🔥 Smart Gas Leakage Detection System 
 
 ![Status](https://img.shields.io/badge/Status-Completed-28A745?style=for-the-badge)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
